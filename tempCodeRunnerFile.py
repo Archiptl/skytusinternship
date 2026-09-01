@@ -1,2 +1,6 @@
-num=[25,36,58,5,8,56,56]
-print(num.pop(0))
+import csv
+file = open("data.csv", "r")
+reader = csv.reader(file)
+for row in reader:
+    print(" | ".join(row))
+file.close()
